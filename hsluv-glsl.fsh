@@ -1,5 +1,5 @@
 /*
-HSLUV-GLSL v4.0
+HSLUV-GLSL v4.1
 HSLUV is a human-friendly alternative to HSL. ( http://www.hsluv.org )
 GLSL port by William Malo ( https://github.com/williammalo )
 Put this code in your fragment shader.
@@ -175,7 +175,7 @@ vec3 lchToLuv(vec3 tuple) {
 }
 
 vec3 hsluvToLch(vec3 tuple) {
-    tuple.g *= hsluv_maxChromaForLH(tuple.b, tuple.r) / 100.0;
+    tuple.g *= hsluv_maxChromaForLH(tuple.b, tuple.r) * 100.0;
     return tuple.bgr;
 }
 
@@ -185,7 +185,7 @@ vec3 lchToHsluv(vec3 tuple) {
 }
 
 vec3 hpluvToLch(vec3 tuple) {
-    tuple.g *= hsluv_maxSafeChromaForL(tuple.b) / 100.0;
+    tuple.g *= hsluv_maxSafeChromaForL(tuple.b) * 100.0;
     return tuple.bgr;
 }
 

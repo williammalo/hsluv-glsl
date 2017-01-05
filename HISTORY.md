@@ -28,3 +28,6 @@ v3.2 July 25, 2016
 
 v4.0 December 18, 2016
 	- changed name to HSLUV
+
+v4.1 January 5, 2017
+	- Fixed https://github.com/williammalo/hsluv-glsl/issues/1
