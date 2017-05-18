@@ -31,3 +31,7 @@ v4.0 December 18, 2016
 
 v4.1 January 5, 2017
 	- Fixed https://github.com/williammalo/hsluv-glsl/issues/1
+
+v4.2 May 18, 2017
+	- Fixed https://github.com/williammalo/hsluv-glsl/issues/1 again
+	- Simplified and optimised code a bit
